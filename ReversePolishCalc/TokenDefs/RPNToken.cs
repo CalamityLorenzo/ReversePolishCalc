@@ -1,13 +1,14 @@
 ﻿
 namespace ReversePolishCalc.TokenDefs
 {
-    public class RPNToken (string originalVal)
+    public class RPNToken(string originalVal)
     {
+        public String OriginalValue { get; } = originalVal;
     }
 
     public class NumberRPNToken : RPNToken
     {
-        public NumberRPNToken(string originalDigits):base(originalDigits)
+        public NumberRPNToken(string originalDigits) : base(originalDigits)
         {
             processInput(originalDigits);
         }
@@ -20,5 +21,7 @@ namespace ReversePolishCalc.TokenDefs
         public double NumberValue { get; private set; }
     }
 
-    public class OperaetorRPNToken(string operatorVal);
+    public class OperatorRPNToken(string operatorVal) : RPNToken(operatorVal);
+
+    public class WhiteSpaceToken(): RPNToken("");
 }
