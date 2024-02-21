@@ -13,7 +13,7 @@ namespace Tests
         [Fact]
         public void TokenOutput()
         {
-            ShuntingYardProcesor syr = new();
+            ShuntingYardProcessor syr = new();
 
 
             syr.Parse("1+2+3");
@@ -27,10 +27,10 @@ namespace Tests
         [Fact]
         public void TokenValueOutput()
         {
-            ShuntingYardProcesor syr = new();
+            ShuntingYardProcessor syr = new();
 
 
-            syr.Parse("1+2+3");
+            var output = syr.Parse("1+2+3");
             
             Trace.WriteLine((syr.Tokens[0] as SYardNumber).Value);
             Trace.WriteLine((syr.Tokens[1] as SYardOperator).OriginalValue);
@@ -47,10 +47,10 @@ namespace Tests
         [Fact]
         public void TokenValueWhitespaceAndOutput()
         {
-            ShuntingYardProcesor syr = new();
+            ShuntingYardProcessor syr = new();
 
 
-            syr.Parse("1*2*3/       max(pot(4))");
+            var output = syr.Parse("1*2*3/       max(pot(4))");
 
 
             Assert.True(syr.Tokens.Count == 14);
