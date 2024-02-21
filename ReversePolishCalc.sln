@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversePolishCalc", "ReversePolishCalc\ReversePolishCalc.csproj", "{BEFE240D-AD15-4E59-8B42-F546239A0326}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPNTests", "RPNTests\RPNTests.csproj", "{C22EEACF-B69C-4EE7-ADAD-585C07A13736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "RPNTests\Tests.csproj", "{C22EEACF-B69C-4EE7-ADAD-585C07A13736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShuntingYard", "ShuntingYard\ShuntingYard.csproj", "{6C1E28F2-9131-4667-BB1C-348E62E93292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShuntingYard", "ShuntingYard\ShuntingYard.csproj", "{6C1E28F2-9131-4667-BB1C-348E62E93292}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

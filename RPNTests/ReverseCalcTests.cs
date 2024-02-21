@@ -1,9 +1,9 @@
 using ReversePolishCalc;
 using ReversePolishCalc.TokenDefs;
 
-namespace RPNTests
+namespace Tests
 {
-    public class UnitTest1
+    public class ReverseCalcTests
     {
         [Fact]
         public void TokenOutput()

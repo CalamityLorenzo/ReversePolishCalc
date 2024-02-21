@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReversePolishCalc\ReversePolishCalc.csproj" />
+    <ProjectReference Include="..\ShuntingYard\ShuntingYard.csproj" />
   </ItemGroup>
 
 </Project>
